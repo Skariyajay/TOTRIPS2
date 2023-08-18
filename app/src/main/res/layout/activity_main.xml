@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp"
+            android:src="@drawable/login_image" />
+
+        <EditText
+
+            android:id="@+id/main_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:drawableLeft="@drawable/email_online"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:minHeight="@dimen/_48sdp"
+            style="@style/edit_16"/>
+
+        <EditText
+
+            android:id="@+id/main_password"
+            android:textColorHighlight="@color/white_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_email"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableLeft="@drawable/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="@dimen/_48sdp"
+            style="@style/edit_16"
+            />
+
+        <CheckBox
+
+            android:id="@+id/main_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_password"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Remember me"
+            android:textColor="@color/black"
+            />
+
+
+        <Button
+
+            android:id="@+id/main_login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_button_white"
+            android:text="Log In"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_100sdp"
+            android:layout_below="@id/main_remember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:id="@+id/main_signup"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_button_red"
+            android:text="Sign Up"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_100sdp"
+            android:layout_below="@id/main_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:textColor="@color/black"
+            android:text="Forget your password"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_below="@id/main_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
